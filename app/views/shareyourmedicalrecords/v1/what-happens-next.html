@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block service_name %}
+{% include "shareyourmedicalrecords/v1/inc/service_name.html" %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <div class="govuk-box-highlight">
+        <h1 class="heading-xlarge">
+          Your response has been submitted
+        </h1>
+      </div>
+
+
+      <h2 class="heading-large">
+        What happens next
+      </h2>
+
+      <p>
+        Your medical information will be looked at by a healthcare professional who is trained to see whether you meet the criteria to get ESA.
+      </p>
+
+      <p>
+        DWP might be able to make a decision based on this information. If not, you’ll need to go to a face to face appointment to assess whether:
+      </p>
+
+      <ul class="list list-bullet">
+        <li>you need some help before you can work again</li>
+        <li>you can’t work, and probably can’t work for a long time</li>
+        <li>you’re able to work now</li>
+      </ul>
+
+      <p>
+        Within the next 2 weeks you’ll receive either:
+      </p>
+
+      <ul class="list list-bullet">
+        <li>a decision</li>
+        <li>an appointment for a face to face assessment</li>
+      </ul>
+
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

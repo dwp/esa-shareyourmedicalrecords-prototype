@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block service_name %}
+{% include "shareyourmedicalrecords/v1/inc/service_name.html" %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Share your medical records
+      </h1>
+
+      <p>
+        You can choose to select parts of your medical records and share them with the Department for Work and Pensions. 
+      </p>
+
+
+      <p>
+        This could:
+      </p>
+
+      <ul class="list list-bullet">
+        <li>speed up your claim</li>
+        <li>stop you needing a face to face appointment with an assessor </li>
+      </ul>
+
+      <p>
+        Anything you choose to share will only be used for your Employment and Support Allowance claim. Your information won’t be used for anything else.
+      </p>
+
+      <a href="sign-in" class="button">Continue</a>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

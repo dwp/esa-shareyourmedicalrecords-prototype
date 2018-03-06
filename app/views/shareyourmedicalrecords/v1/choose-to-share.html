@@ -1,0 +1,277 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block service_name %}
+{% include "shareyourmedicalrecords/v1/inc/service_name.html" %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+
+      <h1 class="heading-xlarge">
+        Choose what to share
+      </h1>
+
+      <p class="lede">
+        Review the information provided by the GP surgery and select what you want to share with DWP.
+      </p>
+
+      <h3 class="heading-medium">
+        Active problems and issues
+      </h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th scope="col">Start date</th>
+            <th scope="col">Entry</th>
+            <th scope="col">Significance</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="multiple-choice">
+                <input id="button-1" name="button-1" type="checkbox" value="">
+                <label for="button-1">&nbsp;</label>
+              </div>
+            </td>
+            <td>1 May 2015</td>
+            <td>Type II diabetes mellitus</td>
+            <td>Major</td>
+            <td>Treated daily</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="multiple-choice">
+                <input id="button-2" name="button-2" type="checkbox" value="">
+                <label for="button-2">&nbsp;</label>
+              </div>
+            </td>
+            <td>1 July 2016</td>
+            <td>Low back pain</td>
+            <td>Major</td>
+            <td>Treated daily</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 class="heading-medium">
+        Current medication issues
+      </h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th scope="col">Start date</th>
+            <th scope="col">Medication item</th>
+            <th scope="col">Type</th>
+            <th scope="col">Scheduled end date</th>
+            <th scope="col">Days duration</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="multiple-choice">
+                <input id="button-3" name="button-3" type="checkbox" value="">
+                <label for="button-3">&nbsp;</label>
+              </div>
+            </td>
+            <td>1 May 2015</td>
+            <td>Lansoprazole 15mg gastro-resistant capsules</td>
+            <td>4</td>
+            <td>19 November 2019</td>
+            <td>Day Duration 2</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="multiple-choice">
+                <input id="button-4" name="button-4" type="checkbox" value="">
+                <label for="button-4">&nbsp;</label>
+              </div>
+            </td>
+            <td>1 May 2015</td>
+            <td>Amoxicillin 500mg capsules Supply (42) capsule(s)</td>
+            <td>2</td>
+            <td>19 November 2019</td>
+            <td>Day Duration 4</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 class="heading-medium">
+        Current repeat medications
+      </h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th scope="col">Last issued</th>
+            <th scope="col">Medication item</th>
+            <th scope="col">Start date</th>
+            <th scope="col">Review date</th>
+            <th scope="col">Number issued</th>
+            <th scope="col">Max issues</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="multiple-choice">
+                <input id="button-5" name="button-5" type="checkbox" value="">
+                <label for="button-5">&nbsp;</label>
+              </div>
+            </td>
+            <td>Issue more</td>
+            <td>Metformin 500mg tablets</td>
+            <td>1 May 2015</td>
+            <td>Issue more</td>
+            <td>Issue more</td>
+            <td>Issue more</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="multiple-choice">
+                <input id="button-6" name="button-6" type="checkbox" value="">
+                <label for="button-6">&nbsp;</label>
+              </div>
+            </td>
+            <td>Issue more</td>
+            <td>Metformin 500mg tablets</td>
+            <td>1 July 2016</td>
+            <td>Issue more</td>
+            <td>Issue more</td>
+            <td>Issue more</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 class="heading-medium">
+        Current allergies and adverse reactions
+      </h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th scope="col">Start date</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="multiple-choice">
+                <input id="button-7" name="button-7" type="checkbox" value="">
+                <label for="button-7">&nbsp;</label>
+              </div>
+            </td>
+            <td>1 May 2015</td>
+            <td>Work allergy</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="multiple-choice">
+                <input id="button-8" name="button-8" type="checkbox" value="">
+                <label for="button-8">&nbsp;</label>
+              </div>
+            </td>
+            <td>1 July 2016</td>
+            <td>Work allergy</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 class="heading-medium">
+        Encounters
+      </h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th scope="col">Date</th>
+            <th scope="col">Title</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="multiple-choice">
+                <input id="button-9" name="button-9" type="checkbox" value="">
+                <label for="button-9">&nbsp;</label>
+              </div>
+            </td>
+            <td>1 July 2016</td>
+            <td>Miss Tanya Turnpike (Practice Nurse) - Dr Johnson and Partners (J12345)</td>
+            <td>Result : Full blood count - FBC - Normal - No Action.</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="multiple-choice">
+                <input id="button-10" name="button-10" type="checkbox" value="">
+                <label for="button-10">&nbsp;</label>
+              </div>
+            </td>
+            <td>1 July 2016</td>
+            <td>Miss Messenger</td>
+            <td>Result : All good - No Action.</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="multiple-choice">
+                <input id="button-11" name="button-11" type="checkbox" value="">
+                <label for="button-11">&nbsp;</label>
+              </div>
+            </td>
+            <td>1 July 2016</td>
+            <td>Mr Pickles</td>
+            <td>Result : Hmm, something maybe wrong - Possible Action required.</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="multiple-choice">
+                <input id="button-12" name="button-12" type="checkbox" value="">
+                <label for="button-12">&nbsp;</label>
+              </div>
+            </td>
+            <td>1 May 2015</td>
+            <td>Dr Jeffrey Johnson - Dr Johnson and Partners (J12345)</td>
+            <td>Haemoglobin A1c level - IFCC standardised 20.5 mmol/mol.
+Insulin isophane biphasic porcine 30/70 100units/ml suspension for injection 10ml vials</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <p>
+        &nbsp;
+      </p>
+
+      <p>
+        <a href="review-response" class="button">Continue</a>
+      </p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
