@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block service_name %}
+{% include "shareyourmedicalrecords/1/inc/service_name.html" %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        ESA - share you medical records
+      </h1>
+
+      <h2 class="heading-large">
+        About this prototype
+      </h2>
+
+
+      <p>
+        This prototype is an in-browser prototype.
+      </p>
+
+      <p>
+        It was made with the intention of being used as a stimulus in a research session to see:
+      </p>
+
+      <ul class="list list-bullet">
+        <li>if citizens would be comfortable with being told about the service by text message</li>
+        <li>what forms of logging into a service citizens would be comfortable using</li>
+        <li>if citizens would be comfortable having the medical record held by their GP imported into such a service</li>
+        <li>if citizens would be comfortable selecting what they want to share (and restrict beinbg shared, by not being selected)</li>
+      </ul>
+
+      <a href="start" class="button">Continue</a>
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

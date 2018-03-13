@@ -1,0 +1,216 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block service_name %}
+{% include "shareyourmedicalrecords/1/inc/service_name.html" %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+
+      <h1 class="heading-xlarge">
+        Choose what to share
+      </h1>
+
+      <p class="lede">
+        Review the information provided by the GP surgery and select what you want to share with DWP.
+      </p>
+
+      <h3 class="heading-medium">
+        Active problems and issues
+      </h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th scope="col">Start date</th>
+            <th scope="col">Entry</th>
+            <th scope="col">Significance</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="multiple-choice">
+                <input id="button-1" name="button-1" type="checkbox" value="">
+                <label for="button-1">&nbsp;</label>
+              </div>
+            </td>
+            <td>5 May 2016</td>
+            <td>Herpes simplex virus</td>
+            <td>Minor</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="multiple-choice">
+                <input id="button-2" name="button-2" type="checkbox" value="">
+                <label for="button-2">&nbsp;</label>
+              </div>
+            </td>
+            <td>1 February 2018</td>
+            <td>Compound fracture - shinbone</td>
+            <td>Major</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 class="heading-medium">
+        Current medication issues
+      </h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th scope="col">Start date</th>
+            <th scope="col">Medication item</th>
+            <th scope="col">Scheduled end date</th>
+            <th scope="col">Days duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="multiple-choice">
+                <input id="button-3" name="button-3" type="checkbox" value="">
+                <label for="button-3">&nbsp;</label>
+              </div>
+            </td>
+            <td>10 March 2018</td>
+            <td>Zomorph 60mg</td>
+            <td>9 April 2018</td>
+            <td>31 days</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="multiple-choice">
+                <input id="button-4" name="button-4" type="checkbox" value="">
+                <label for="button-4">&nbsp;</label>
+              </div>
+            </td>
+            <td>5 May 2016</td>
+            <td>Aciclovir</td>
+            <td>4 August 2016</td>
+            <td>3 months</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 class="heading-medium">
+        Current repeat medications
+      </h3>
+
+      <p>
+        &nbsp;
+      </p>
+
+      <h3 class="heading-medium">
+        Current allergies and adverse reactions
+      </h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th scope="col">Start date</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="multiple-choice">
+                <input id="button-7" name="button-7" type="checkbox" value="">
+                <label for="button-7">&nbsp;</label>
+              </div>
+            </td>
+            <td>1 September 2015</td>
+            <td>Hay fever</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 class="heading-medium">
+        Encounters
+      </h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th scope="col">Date</th>
+            <th scope="col">Title</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="multiple-choice">
+                <input id="button-9" name="button-9" type="checkbox" value="">
+                <label for="button-9">&nbsp;</label>
+              </div>
+            </td>
+            <td>10 March 2018</td>
+            <td>Miss Tanya Turnpike (Practice Nurse) - Dr Johnson and Partners (J12345)</td>
+            <td>Increased pain, opiate painkiller required</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="multiple-choice">
+                <input id="button-10" name="button-10" type="checkbox" value="">
+                <label for="button-10">&nbsp;</label>
+              </div>
+            </td>
+            <td>5 March 2018</td>
+            <td>Miss Messenger</td>
+            <td>Result : All good - No Action.</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="multiple-choice">
+                <input id="button-11" name="button-11" type="checkbox" value="">
+                <label for="button-11">&nbsp;</label>
+              </div>
+            </td>
+            <td>2 March 2018</td>
+            <td>Mr Pickles</td>
+            <td>Operation - repair shinbone fracture</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="multiple-choice">
+                <input id="button-12" name="button-12" type="checkbox" value="">
+                <label for="button-12">&nbsp;</label>
+              </div>
+            </td>
+            <td>5 May 2016</td>
+            <td>Dr Jeffrey Johnson - Dr Johnson and Partners (J12345)</td>
+            <td>Herpes simplex virus. 3 month suppression</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        &nbsp;
+      </p>
+
+      <p>
+        <a href="review-response" class="button">Continue</a>
+      </p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block service_name %}
+{% include "shareyourmedicalrecords/1/inc/service_name.html" %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Sign in
+      </h1>
+
+      <div class="form-group">
+        <label class="form-label" for="name">Name</label>
+        <input class="form-control" id="name" name="name" type="text">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="nino">National Insurance number</label>
+        <input class="form-control" id="nino" name="nino" type="text">
+      </div>
+
+
+      <a href="patient-summary" class="button">Continue</a>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}

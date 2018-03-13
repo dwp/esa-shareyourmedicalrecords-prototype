@@ -1,0 +1,177 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block service_name %}
+{% include "shareyourmedicalrecords/1/inc/service_name.html" %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-full">
+
+      <h1 class="heading-xlarge">
+        Review which records you're sharing
+      </h1>
+
+
+      <p class="lede">
+        These are what you selected to share with DWP.
+      </p>
+
+      <h3 class="heading-medium">
+        Active problems and issues
+      </h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Start date</th>
+            <th scope="col">Entry</th>
+            <th scope="col">Significance</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1 March 2018</td>
+            <td>Low back pain</td>
+            <td>Major</td>
+            <td>Treated daily</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 class="heading-medium">
+        Current medication issues
+      </h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Start date</th>
+            <th scope="col">Medication item</th>
+            <th scope="col">Type</th>
+            <th scope="col">Scheduled end date</th>
+            <th scope="col">Days duration</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1 May 2015</td>
+            <td>Lansoprazole 15mg gastro-resistant capsules</td>
+            <td>4</td>
+            <td>19 November 2019</td>
+            <td>Day Duration 2</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>1 May 2015</td>
+            <td>Amoxicillin 500mg capsules Supply (42) capsule(s)</td>
+            <td>2</td>
+            <td>19 November 2019</td>
+            <td>Day Duration 4</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>1 March 2018</td>
+            <td>Acemetacin 500mg capsules Supply (42) capsule(s)</td>
+            <td>2</td>
+            <td>1 April 2018</td>
+            <td>Day Duration 28</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 class="heading-medium">
+        Current repeat medications
+      </h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Last issued</th>
+            <th scope="col">Medication item</th>
+            <th scope="col">Start date</th>
+            <th scope="col">Review date</th>
+            <th scope="col">Number issued</th>
+            <th scope="col">Max issues</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Issue more</td>
+            <td>Metformin 500mg tablets</td>
+            <td>1 March 2018</td>
+            <td>Issue more</td>
+            <td>Issue more</td>
+            <td>Issue more</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 class="heading-medium">
+        Current allergies and adverse reactions
+      </h3>
+
+      <p>
+        Nothing selected.
+      </p>
+
+
+      <h3 class="heading-medium">
+        Encounters
+      </h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Title</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1 March 2018</td>
+            <td>Miss Tanya Turnpike (Practice Nurse) - Dr Johnson and Partners (J12345)</td>
+            <td>Result : Full blood count - FBC - Normal - No Action.</td>
+          </tr>
+          <tr>
+            <td>1 March 2018</td>
+            <td>Miss Messenger</td>
+            <td>Result : All good - No Action.</td>
+          </tr>
+          <tr>
+            <td>1 March 2018</td>
+            <td>Mr Pickles</td>
+            <td>Result : Hmm, something maybe wrong - Possible Action required.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        &nbsp;
+      </p>
+
+      <p>
+        <a href="what-happens-next" class="button">Continue</a>
+      </p>
+
+      <p>
+        <a href="choose-to-share">Change my selection</a>
+      </p>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
