@@ -1,0 +1,162 @@
+// Path to assets for use with the file-url function
+// in the govuk frontend toolkit's url-helpers partial
+$path: "/public/images/";
+
+// Import GOV.UK elements from /govuk-modules/, this will import the frontend toolkit and some base styles.
+// Take a look in /govuk-modules/_govuk-elements.scss to see which files are imported.
+@import 'govuk-elements';
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+#global-header-bar { display:none; }
+#proposition-name {
+  font-family: 'NotoSans', arial, sans-serif !important;
+}
+
+.dwplogo {
+  margin-top: 4px !important;
+  font-size: 30px !important;
+  background: none !important;
+}
+
+details {
+  position:relative;
+  .quicklinks {
+    position:absolute;
+    background-color:white;
+    padding:0 $gutter/2 $gutter/2;
+    font-size:16px;
+    border:1px solid $grey-2;
+    border-top:none;
+  }
+}
+
+
+/// Style specifically for index page
+.index-page-banner {
+  background-color: $govuk-blue;
+  color: $white;
+  // margin-bottom: $gutter;
+}
+
+.index-heading-wrapper {
+  margin: 0 auto;
+  max-width: 968px;
+}
+
+.index-heading-xlarge {
+  margin: 0;
+  padding: 3rem 0 1rem;
+  font-size:64px;
+  text-shadow: 0px 1px 2px rgba(black,0.42);
+}
+
+.index-heading-large {
+  margin: 0;
+  padding: 1rem 0 3rem;
+  font-weight: normal;
+  font-size:1.62em;
+  font-weight:bold;
+  letter-spacing:0.2em;
+  opacity:0.86;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1020px) {
+  .index-heading-xlarge,
+  .index-heading-large {
+    margin-left: $gutter;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .index-heading-xlarge,
+  .index-heading-large {
+    margin-left: $gutter / 2;
+  }
+}
+
+.phase-banner .tag--red {
+  background-color:$mellow-red;
+}
+
+.button-grey {
+  &:link,&:visited {
+    color:black;
+    background-color:$grey-3;
+    box-shadow: 0 2px 0 darken($grey-3,40);
+  }
+  &:active,&:hover {
+    background-color:darken($grey-3,5);
+  }
+
+}
+.version {
+  border-bottom: 1px solid #bfc1c3;
+}
+.changes {
+  font-size:16px;
+}
+
+.mt0 { margin-top:0 !important; }
+.mb0 { margin-bottom:0 !important; }
+.mtq { margin-top:$gutter/4 !important; }
+.mbq { margin-bottom:$gutter/4 !important; }
+.mth { margin-top:$gutter/2 !important; }
+.mbh { margin-bottom:$gutter/2 !important; }
+.mt1 { margin-top:$gutter !important; }
+.mb1 { margin-bottom:$gutter !important; }
+.mt2 { margin-top:2*$gutter !important; }
+.mb2 { margin-bottom:2*$gutter !important; }
+
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.m0 { margin:0px !important }
+.m5 { margin:5px !important }
+.m10 { margin:10px !important }
+.m20 { margin:20px !important }
+.m30 { margin:30px !important }
+.m60 { margin:60px !important }
+
+.mt0 { margin-top:0px !important }
+.mt5 { margin-top:5px !important }
+.mt10 { margin-top:10px !important }
+.mt20 { margin-top:20px !important }
+.mt30 { margin-top:30px !important }
+.mt60 { margin-top:60px !important }
+
+.mb0 { margin-bottom:0px !important }
+.mb5 { margin-bottom:5px !important }
+.mb10 { margin-bottom:10px !important }
+.mb20 { margin-bottom:20px !important }
+.mb30 { margin-bottom:30px !important }
+.mb60 { margin-bottom:60px !important }
+
+.p0 { padding:0px !important }
+.p5 { padding:5px !important }
+.p10 { padding:10px !important }
+.p20 { padding:20px !important }
+.p30 { padding:30px !important }
+.p60 { padding:60px !important }
+
+.pt0 { padding-top:0px !important }
+.pt5 { padding-top:5px !important }
+.pt10 { padding-top:10px !important }
+.pt20 { padding-top:20px !important }
+.pt30 { padding-top:30px !important }
+.pt60 { padding-top:60px !important }
+
+.pb0 { padding-bottom:0px !important }
+.pb5 { padding-bottom:5px !important }
+.pb10 { padding-bottom:10px !important }
+.pb20 { padding-bottom:20px !important }
+.pb30 { padding-bottom:30px !important }
+.pb60 { padding-bottom:60px !important }
+
+.bb {
+  border-bottom:1px solid $grey-2;
+}
