@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block service_name %}
+{% include "shareyourmedicalrecords/1/inc/service_name.html" %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h2 class="heading-large">
+        You are about to view
+      </h2>
+
+      <p>
+        Your medical information
+      </p>
+
+      <a href="patient-summary" class="button">Continue</a>
+
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
